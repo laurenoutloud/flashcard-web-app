@@ -1,4 +1,4 @@
-document.querySelector("#card");
+let card  = document.querySelector("#card");
 let showFront = true;
 function flipCard(){
     showFront = !showFront;
@@ -7,7 +7,11 @@ function flipCard(){
 
 function showCard(){
     let text = showFront ? "front" : "back";
-    document.querySelector("#card").innerText = text;
+    card.innerText = text;
+}
+
+function generateDeckList() {
+    
 }
 
 showCard();
