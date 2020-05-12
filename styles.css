@@ -27,3 +27,8 @@ body {
 .card-area {
     text-align: center;
 }
+
+.card {
+    min-height: 300px;
+    justify-content: center;
+}
