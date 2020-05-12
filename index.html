@@ -9,17 +9,18 @@
 </head>
 <body>
     <h1>Flash Card Web App</h1>
-
     <div class="container">
+        
         <div id="card-area" class="card-area">
             <h2>Cards</h2>
+            
             <div class="card" id="card" onclick={flipCard()}>
-                <div class="card-body">
-                  This is some text within a card body.
-                </div>
+                <div class="card-body"></div>
             </div>
-            <p>Click on the card to flip sides</p>
-            <button type="button" class="btn btn-secondary">Next</button>
+            <div>Click on the card to flip sides</div>
+            <p class="add-new-card">add new card</p>
+            <button type="button" class="btn btn-secondary" onclick={getNextCard()}>Next Card</button>
+            
         </div>
     </div>
 

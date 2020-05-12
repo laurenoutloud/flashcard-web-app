@@ -29,6 +29,23 @@ body {
 }
 
 .card {
+    display: flex;
+    flex-wrap: wrap;
     min-height: 300px;
+    max-width: 200px;
     justify-content: center;
+    padding: 5px;
+}
+
+.add-new-card {
+    text-align: right;
+    color: blue;
+}
+
+.add-new-card:hover{
+    cursor: pointer;
+}
+
+.card:hover {
+    cursor: pointer;
 }
