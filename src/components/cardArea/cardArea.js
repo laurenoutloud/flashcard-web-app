@@ -19,12 +19,14 @@ class CardArea extends Component {
         return (
             <div className="cardArea-container">
                 <h2>Cards</h2>
-                <Card>
+                <Card onClick={this.flipCard}>
                     <CardBody>
-                        <CardText>{this.state.showFront ? "Question" : "Answer"}</CardText>
+                        <CardText>{this.state.showFront ? "Front" : "Back"}</CardText>
                     </CardBody>
-                    <Button onClick={this.flipCard}>Button</Button>
+                    
                 </Card>
+                <p>Click on the card to flip sides</p>
+                <Button>Next</Button>
             </div>
         );
     }
