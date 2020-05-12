@@ -1,12 +1,9 @@
-.container {
-    width: 90vw;
-    min-height: 80vh;
-    color: white;
-    background: #9B533F;
+.dashboard-container {
+    background: lightgoldenrodyellow;
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    align-items: stretch;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 /* 987554*/

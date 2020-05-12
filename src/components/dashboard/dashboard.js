@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import './dashboard.css';
+import Sidebar from '../sidebar/sidebar';
+import CardArea from '../cardArea/cardArea'
 
 class Dashboard extends Component {
     constructor(props) {
@@ -8,8 +10,9 @@ class Dashboard extends Component {
     
     render(){
         return (
-            <div className="container">
-                Testing 11234345;
+            <div className="dashboard-container">
+                <Sidebar/>
+                <CardArea/>
             </div>
         );
     }
