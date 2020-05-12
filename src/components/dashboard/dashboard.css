@@ -1,9 +1,0 @@
-.dashboard-container {
-    background: #EBF4FA   ;
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    padding: 15px;
-    border-radius: 3px;
-    max-height: 80vh;
-}
