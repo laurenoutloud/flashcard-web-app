@@ -1,9 +1,9 @@
 .dashboard-container {
-    background: lightgoldenrodyellow;
+    background: #EBF4FA   ;
     display: flex;
     justify-content: center;
     align-items: stretch;
     padding: 15px;
     border-radius: 3px;
+    max-height: 80vh;
 }
-/* 987554*/

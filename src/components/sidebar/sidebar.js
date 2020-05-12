@@ -10,6 +10,13 @@ class Sidebar extends Component {
         return (
             <div className="sidebar-container">
                 <h2>Decks</h2>
+                <ul>
+                    <li>test</li>
+                    <li>test</li>
+                    <li>test</li>
+                    <li>test</li>
+                    <li>test</li>
+                </ul>
             </div>
         );
     }
