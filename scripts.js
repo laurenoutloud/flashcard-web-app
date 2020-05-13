@@ -9,7 +9,6 @@ async function getCards(){
     let response = await fetch("https://xsui7y6qu7.execute-api.us-east-1.amazonaws.com/prod/flashcards");
     cards = await response.json();
     cards = JSON.parse(cards.body);
-
     showCard();
 }
 
@@ -27,7 +26,18 @@ function getNextCard(){
     currentCard < cards.length - 1 ? currentCard++ : currentCard = 0;
     showFront = true;
     showCard();
-    //console.log(new Date().getTime())
+}
+
+function addNewCard(){
+    let front = prompt("Enter the text for the front of your card:");
+    let back = prompt("Enter the text for the back of your card:");
+
+    fetch("https://xsui7y6qu7.execute-api.us-east-1.amazonaws.com/prod/flashcards", {
+        method: "POST",
+        body: JSON.stringify({"front": front, "back": back})
+    });
+
+    cards.push({"front": front, "back": back});
 }
 
 getCards();
